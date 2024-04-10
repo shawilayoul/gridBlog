@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <header class="flex items-center p-2 gap-20 bg-blue-600 text-white h-12">
+      <h1><a href="index.html"> My blog</a></h1>
+      <nav class="flex w-96">
+        <ul class="flex w-full items-center justify-between">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        action="#"
+        class="bg-gray-200 flex flex-col items-center justify-center p-2"
+      >
+        <div class="p-1">
+          <div>
+            <label for="name">Name</label>
+          </div>
+          <input type="text" id="name" class="p-1 rounded" />
+        </div>
+        <div class="p-1">
+          <div>
+            <label for="email">E-email address</label>
+          </div>
+          <input type="text" id="email" class="p-1 rounded" />
+        </div>
+        <div class="p-1">
+          <div>
+            <label for="message">Message</label>
+          </div>
+          <textarea
+            class="p-1 rounded"
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="bg-blue-600 text-white p-2 rounded w-24">send</button>
+      </form>
+    </main>
+  </body>
+</html>
