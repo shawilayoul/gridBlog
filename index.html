@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Blog</title>
-  </head>
-  <body>
-    <header class="flex items-center p-2 gap-20 bg-blue-600 text-white h-12">
-      <h1><a href="index.html"> My blog</a></h1>
-      <nav class="flex w-96">
-        <ul class="flex w-full items-center justify-between">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <form action="#" class="p-2 border-2">
-      <input
-        class="border-2 p-1 rounded-full"
-        type="text"
-        id="text-input"
-        placeholder="search for an article"
-      />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Blog</title>
+</head>
+
+<body class="relative">
+  <header class="fixed w-full flex items-center justify-between p-4 mb-2 bg-blue-600 text-white h-16">
+    <h1><a href="index.html"> My blog</a></h1>
+    <form action="#" class="">
+      <input class="focus:w-96 border-2 p-1 rounded-full " type="text" id="text-input"
+        placeholder="search for an article" />
     </form>
-    <main class="grid grid-cols-2 gap-2">
-      <section class="article-container grid grid-cols-3 gap-2"></section>
-      <aside class="bg-green-200"></aside>
-    </main>
-    <script src="script.js"></script>
-  </body>
+    <nav class="sm:hidden md:hidden lg:flex w-96 ">
+      <ul class="flex items-center justify-between  w-full ">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <aside class="border-r-2"></aside>
+    <section class="article-container grid md:grid-cols-3  sm:grid-cols-2 lg:grid-cols-4 mt-24 gap-2 "></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>
